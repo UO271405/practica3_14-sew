@@ -15,7 +15,7 @@
         <div class="container">
             <strong>Introduzca un archivo y le diremos si es un .txt o no.</strong>
             <br>
-            <input type="file" id="archivoTexto" onchange="object.leerArchivoTexto(this.files);">
+            <input type="file" id="archivoTexto" name="archivo" title="archivo" onchange="object.leerArchivoTexto(this.files);">
         </div>
         <div id='contenedor_resultado' style="display: none;">
             Con un índice de masa corporal de <span id='imc'></span>, se encuentra en el siguiente grupo: <span id="resultado"></span>
