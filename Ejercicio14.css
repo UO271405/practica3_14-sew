@@ -1,0 +1,24 @@
+/*especificidad -> 1*/
+body{
+    font: 400 1em Tahoma, sans-serif;
+    line-height: 1.8;
+    color: black;
+    text-align: center;
+}
+
+/*especificidad -> 11*/
+input[type=file]{
+    padding: 0.75em 1.25em;
+    margin: 0.75em 0;
+  }
+
+/*especificidad -> 10*/
+.container {
+    margin: auto;
+    padding: 1em;
+    border: solid;
+    border-radius: 0.7em;
+    width: 20%;
+    border-color: black;
+    margin-bottom: 1em;
+}

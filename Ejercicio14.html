@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <title>Detector de .txt</title>
+        <meta name="description" content="Detección de archivos .txt.">
+        <meta name="author" content="Luis Fernández Suárez">
+        <link rel="stylesheet" href="Ejercicio14.css"/>
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="Ejercicio14.js"></script>
+    </head>
+    <body>
+        <h1>Detector de archivos .txt</h1>
+        <div class="container">
+            <strong>Introduzca un archivo y le diremos si es un .txt o no.</strong>
+            <br>
+            <input type="file" id="archivoTexto" onchange="object.leerArchivoTexto(this.files);">
+        </div>
+        <div id='contenedor_resultado' style="display: none;">
+            Con un índice de masa corporal de <span id='imc'></span>, se encuentra en el siguiente grupo: <span id="resultado"></span>
+        </div>
+
+        <canvas id="canvas"></canvas>
+
+        <p id="errorLectura"></p> 
+        <p id="nombreArchivo"></p>
+        <p id="tamañoArchivo"></p>
+        <p id="tipoArchivo"></p>
+        <p id="ultimaModificacion"></p>
+        <p id="contenidoArchivo"></p>  
+        <pre id="areaTexto"></pre>
+
+        <button type="button" id="pantallaCompleta" onclick="object.pantallaCompleta()">Pantalla completa</button>
+    </body>
+</html>
